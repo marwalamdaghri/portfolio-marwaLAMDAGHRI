@@ -8,6 +8,72 @@ import Image from "next/image"
 import { useState } from "react"
 
 const projects = [
+{
+  title: "Développement d’une solution Web SIG de gestion et suivi des marchés – GEOFLY",
+  description:
+    "Développement complet d’une solution WebGIS pour la gestion, le suivi et la visualisation des marchés pour GEOFLY. Le projet inclut une interface d’authentification, tableau de bord, cartes 2D/3D, gestion des marchés associés, notifications par email, et un système complet CRUD.",
+  technologies: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL/PostGIS",
+    "GeoServer",
+    "Leaflet",
+    "Mapbox",
+    "TailwindCSS",
+    "API REST",
+    "jwt",
+    "Authentification"
+
+  ],
+  images: [
+    // --- 1. INTRO (img 1 & img 2) ---
+    { src: "/projects/PFA/img1.png", alt: "Aperçu général de la plateforme GEOFLY" },
+    { src: "/projects/PFA/img2.png", alt: "Deuxième aperçu général de la plateforme" },
+
+    // --- 2. AUTHENTIFICATION ---
+    { src: "/projects/PFA/connexionpage.png", alt: "Page de connexion" },
+    { src: "/projects/PFA/Annotation 2025-11-01 120905.png", alt: "Annotation interface" },
+
+    // --- 3. CONFIRMATION EMAIL + MDP OUBLIÉ ---
+    { src: "/projects/PFA/EmailConfirmation.png", alt: "Confirmation d'email envoyée" },
+    { src: "/projects/PFA/LienConfirmation.png", alt: "Lien de confirmation d’email" },
+    { src: "/projects/PFA/MDPOubliéEmail.png", alt: "Formulaire mot de passe oublié" },
+    { src: "/projects/PFA/MDPOubliéAvecMessage.png", alt: "Message d’email de récupération envoyé" },
+    { src: "/projects/PFA/NouveauMDPAvecMessage.png", alt: "Confirmation nouveau mot de passe" },
+
+    // --- 4. INTERFACE PRINCIPALE & NAVIGATION ---
+    { src: "/projects/PFA/Dashboard22.png", alt: "Tableau de bord principal" },
+    { src: "/projects/PFA/bare4.png", alt: "la page de gestion des marchés" },
+    { src: "/projects/PFA/vue_tableau.png", alt: "la page de gestion des marchés en vue tableau" },
+    { src: "/projects/PFA/ajouter.png", alt: "Page d'ajout d'un marché" },
+    { src: "/projects/PFA/modifier2.png", alt: "Formulaire de modification d’un marché" },
+    { src: "/projects/PFA/detail.png", alt: "Détails d’un marché" },
+    { src: "/projects/PFA/visualisation_marche_2.png", alt: "Détails géométriques du marché" },
+    { src: "/projects/PFA/docsDEtail.png", alt: "Détails des dossiers liés à un marché" },
+    { src: "/projects/PFA/map_2d.png", alt: "Carte SIG 2D" },
+    { src: "/projects/PFA/map_3D.png", alt: "Carte SIG 3D" },
+    { src: "/projects/PFA/recherche_map.png", alt: "la recherche sur la carte" },
+    { src: "/projects/PFA/recherche_zone.png", alt: "la recherche par zone sur la carte" },
+
+
+    { src: "/projects/PFA/dessin_2d.png", alt: "Dessin 2D d’un marché" },
+
+
+    { src: "/projects/PFA/detail_geometry3D.png", alt: "Détails géométriques 3D du marché" },
+    { src: "/projects/PFA/barre.png", alt: "la barre de navigation" },
+    { src: "/projects/PFA/page.png", alt: "la page de gestion des utilisateurs" },
+    { src: "/projects/PFA/recherche_resultat.png", alt: "recherche des utilisateurs" },
+    { src: "/projects/PFA/modifier.png", alt: "Modifier un utilisateur" },
+    { src: "/projects/PFA/marcheAssocies.png", alt: "Liste des marchés associés à un utilisateur" },
+
+    { src: "/projects/PFA/supprimer.png", alt: "Supprimer(archiver) un utilisateur" },
+  ],
+  videos: [],
+},
+
+
   {
     title: "Application Android - Signalement des Défauts d'Infrastructure",
     description:
