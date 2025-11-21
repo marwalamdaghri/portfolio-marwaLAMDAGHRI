@@ -5,14 +5,14 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navItems = [
-  { label: "Accueil", href: "#home" },
-  { label: "À propos", href: "#about" },
-  { label: "Compétences", href: "#skills" },
-  { label: "Formation", href: "#education" },
-  { label: "Expérience", href: "#experience" },
-  { label: "Projets", href: "#projects" },
-  { label: "Certificats", href: "#certificates" },
-  { label: "Langues", href: "#languages" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Education", href: "#education" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Certificates", href: "#certificates" },
+  { label: "Languages", href: "#languages" },
   { label: "Contact", href: "#contact" },
 ]
 

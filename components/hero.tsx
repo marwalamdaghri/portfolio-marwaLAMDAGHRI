@@ -29,22 +29,22 @@ export function Hero() {
           </div>
 
           {/* Greeting */}
-          <p className="text-muted-foreground mb-2">Bonjour,</p>
+          <p className="text-muted-foreground mb-2">Hello,</p>
 
           {/* Name */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-balance">
-            Je suis <span className="text-primary">Marwa Lamdaghri</span>
+            I'm <span className="text-primary">Marwa Lamdaghri</span>
           </h1>
 
           {/* Title */}
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-balance">
-            Étudiante Ingénieure en Géoinformation
+            Geoinformation Engineering Student
           </p>
 
           {/* Download CV Button */}
           <Button size="lg" className="gap-2" onClick={handleDownloadCV}>
             <Download className="h-5 w-5" />
-            Télécharger CV
+            Download CV
           </Button>
         </div>
       </div>

@@ -2,17 +2,17 @@ import { Card } from "@/components/ui/card"
 import { LanguagesIcon } from "lucide-react"
 
 const languages = [
-  { name: "Français", level: "Courant" },
-  { name: "Anglais", level: "Courant" },
-  { name: "Arabe", level: "Langue maternelle" },
-  { name: "Tamazight", level: "Langue maternelle" },
+  { name: "French", level: "Fluent" },
+  { name: "English", level: "Fluent" },
+  { name: "Arabic", level: "Native language" },
+  { name: "Tamazight", level: "Native language" },
 ]
 
 export function Languages() {
   return (
     <section id="languages" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Langues</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Languages</h2>
 
         <div className="max-w-3xl mx-auto">
           <Card className="p-8">

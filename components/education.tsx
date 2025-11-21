@@ -3,26 +3,28 @@ import { GraduationCap, MapPin } from "lucide-react"
 
 const education = [
   {
-    degree: "Cycle d'Ingénieur d'État en Géoinformation",
-    institution: "Faculté des Sciences et Techniques de Tanger (FSTT)",
-    location: "Tanger, Maroc",
-    period: "2023 - Présent",
+    degree: "State Engineering Cycle in Geoinformation",
+    institution: "Faculty of Sciences and Techniques of Tangier (FSTT)",
+    location: "Tangier, Morocco",
+    period: "2023 – Present",
     description:
-      "Formation spécialisée en géoinformation, analyse spatiale, SIG et développement d'applications géographiques.",
+      "Specialized training in geoinformation, spatial analysis, GIS, and geographic application development.",
   },
   {
-    degree: "Diplôme d'Études Universitaires Scientifiques et Techniques (DEUST)",
-    institution: "Faculté des Sciences et Techniques d'Al Hoceima",
-    location: "Al Hoceima, Maroc",
-    period: "2021 - 2023",
-    description: "Formation universitaire en sciences et techniques avec spécialisation en géoinformation.",
+    degree: "University Diploma in Scientific and Technical Studies (DEUST)",
+    institution: "Faculty of Sciences and Techniques of Al Hoceima",
+    location: "Al Hoceima, Morocco",
+    period: "2021 – 2023",
+    description:
+      "Undergraduate scientific and technical training with a specialization in geoinformation.",
   },
   {
-    degree: "Baccalauréat Sciences Mathématiques A",
-    institution: "Lycée Ibn Al Haytam",
-    location: "Aarouit, Nador, Maroc",
+    degree: "Baccalaureate in Mathematical Sciences A",
+    institution: "Ibn Al Haytam High School",
+    location: "Aarouit, Nador, Morocco",
     period: "2021",
-    description: "Diplôme du baccalauréat avec spécialisation en sciences mathématiques-A.",
+    description:
+      "Baccalaureate diploma with a specialization in Mathematical Sciences A.",
   },
 ]
 
@@ -30,7 +32,7 @@ export function Education() {
   return (
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Formation</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Education</h2>
 
         <div className="max-w-4xl mx-auto space-y-6">
           {education.map((edu, index) => (

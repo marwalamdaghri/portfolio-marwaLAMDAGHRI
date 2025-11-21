@@ -7,31 +7,47 @@ const certificates = [
     title: "Getting Started with Spatial Analysis",
     organization: "ESRI",
     description:
-      "Cette formation m’a initiée aux principes fondamentaux de l’analyse spatiale et à ses six grandes catégories, permettant de mieux comprendre et interpréter les phénomènes géographiques.",
+      "This course introduced me to the fundamental principles of spatial analysis and its six major categories, helping me better understand and interpret geographic phenomena.",
     date: "2025",
     image: "/certificates/cer1ESRI.png",
+  },
+  {
+    title: "Getting Information from a GIS Map",
+    organization: "ESRI",
+    description:
+      "I completed the 'Getting Information from a GIS Map' course, which introduces the basics of reading, analyzing, and interpreting GIS maps. This training explains how to understand spatial information to answer real-world questions using a digital map.",
+    date: "2025",
+    image: "/certificates/Getting Information from a GIS Map_Certificate_11202025.png",
+  },
+  {
+    title: "Python for Everyone",
+    organization: "ESRI",
+    description:
+      "This course allowed me to develop essential Python scripting skills applied to GIS, particularly within ArcGIS Pro and ArcMap environments.",
+    date: "2025",
+    image: "/certificates/Python for Everyone_Certificate_11192025.png",
   },
   {
     title: "Certificate of Appreciation - Legends Science Week",
     organization: "The Legends Club",
     description:
-      "Reconnaissance pour ma contribution précieuse à l'événement Legends Science Week. Participation active et dévouement ayant grandement enrichi l'expérience et contribué au succès global de l'événement.",
+      "Recognition for my valuable contribution to the Legends Science Week event. Active participation and dedication that greatly enriched the experience and contributed to the overall success of the event.",
     date: "2024",
     image: "/certificates/legends-science-week.jpg",
   },
   {
-    title: "Attestation de Reconnaissance - FICAT",
+    title: "Certificate of Recognition - FICAT",
     organization: "Organisation des Jeunes Africains (OJA)",
     description:
-      "Attestation de reconnaissance pour mon dévouement et ma disponibilité en tant que membre du comité d'organisation du Festival International de la Culture Africaine de Tanger (FICAT) - 12ème édition.",
+      "Recognition for my commitment and availability as a member of the organizing committee of the International Festival of African Culture of Tangier (FICAT) – 12th edition.",
     date: "2024",
     image: "/certificates/ficat-recognition.jpg",
   },
   {
-    title: "Certificate of Appreciation – The Legends Club (ONOUSC, Tanger)",
+    title: "Certificate of Appreciation – The Legends Club (ONOUSC, Tangier)",
     organization: "Organisation des Jeunes Africains (OJA)",
     description:
-      "econnaissance pour une contribution exceptionnelle au département d’organisation du club.Cette distinction souligne ma dévotion, mon engagement et mon sens de la collaboration, ayant contribué au succès des activités et événements du club universitaire.",
+      "Recognition for exceptional contribution to the club's organizational department. This distinction highlights my dedication, teamwork, and commitment that contributed to the success of the club’s events and activities.",
     date: "2025",
     image: "/certificates/certificat4.jpg",
   },
@@ -41,7 +57,7 @@ export function Certificates() {
   return (
     <section id="certificates" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Certificats & Distinctions</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Certificates & Achievements</h2>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {certificates.map((cert, index) => (

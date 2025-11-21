@@ -5,17 +5,17 @@ const stats = [
   {
     icon: Briefcase,
     value: "12+",
-    label: "Projets Académiques",
+    label: "Academic Projects",
   },
   {
     icon: Calendar,
     value: "2",
-    label: "Stages Professionnels",
+    label: "Professional Internships",
   },
   {
     icon: Languages,
     value: "4",
-    label: "Langues Parlées",
+    label: "Languages Spoken",
   },
 ]
 
@@ -23,7 +23,7 @@ export function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">À Propos de Moi</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">About Me</h2>
 
         <div className="max-w-4xl mx-auto">
           {/* Stats Cards */}
@@ -44,19 +44,18 @@ export function About() {
           {/* Bio */}
           <Card className="p-8">
             <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-              Étudiante en dernière année du cycle d'ingénieur en géoinformation à la Faculté des Sciences et Techniques
-              de Tanger (FSTT). Passionnée par la géomatique et les technologies spatiales, je recherche un stage de fin
-              d'études afin de mettre en pratique mes compétences en analyse spatiale, SIG et développement
-              d'applications géographiques.
+              Final-year geoinformation engineering student at the Faculty of Sciences and Techniques of Tangier (FSTT).
+              Passionate about geomatics and spatial technologies, I am currently seeking an end-of-studies internship
+              to apply my skills in spatial analysis, GIS, and geographic application development.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-              Mon parcours m'a permis d'acquérir une solide expertise en développement web, systèmes d'information
-              géographique, et gestion de bases de données. J'ai eu l'opportunité de travailler sur des projets variés
-              allant de la topographie au développement d'applications web SIG pour la gestion de marchés publics.
+              My academic journey has enabled me to build solid expertise in web development, geographic information
+              systems, and database management. I have worked on a wide range of projects—from topographic work to GIS
+              web application development for public market management.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Je maîtrise plusieurs langues (Français, Anglais, Arabe, Tamazight) et je suis titulaire du permis B, ce
-              qui me permet d'être mobile et polyvalente dans mes missions professionnelles.
+              I am fluent in several languages (French, English, Arabic, Tamazight) and hold a category B driving
+              license, allowing me to be mobile and adaptable in my professional missions.
             </p>
           </Card>
         </div>

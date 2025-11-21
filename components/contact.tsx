@@ -11,15 +11,15 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    label: "Téléphone",
+    label: "Phone",
     href: "tel:+212689101571",
     value: "+212 689 101 571",
   },
   {
     icon: MapPin,
-    label: "Localisation",
+    label: "Location",
     href: "#",
-    value: "Cité universitaire, Tanger, Maroc",
+    value: "University campus, Tangier, Morocco",
   },
 ]
 
@@ -45,8 +45,7 @@ export function Contact() {
         <div className="max-w-3xl mx-auto">
           <Card className="p-8">
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-center">
-              Je suis actuellement à la recherche d'un stage de fin d'études en géoinformation. N'hésitez pas à me
-              contacter pour discuter d'opportunités de collaboration ou pour toute question !
+              I am currently looking for a final year internship in geoinformation. Feel free to contact me to discuss collaboration opportunities or any questions!
             </p>
 
             <div className="space-y-4 mb-8">
@@ -82,7 +81,7 @@ export function Contact() {
               <Button size="lg" className="gap-2" asChild>
                 <a href="mailto:marwalamdaghri2004@gmail.com">
                   <Mail className="h-5 w-5" />
-                  Envoyer un Email
+                  Send Email
                 </a>
               </Button>
             </div>
@@ -90,8 +89,8 @@ export function Contact() {
 
           {/* Footer */}
           <div className="mt-12 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Marwa Lamdaghri. Tous droits réservés.</p>
-            <p className="mt-2">Permis B • Disponible pour stage de fin d'études</p>
+            <p>© {new Date().getFullYear()} Marwa Lamdaghri. All rights reserved.</p>
+            <p className="mt-2">Driver's License B • Available for final year internship</p>
           </div>
         </div>
       </div>

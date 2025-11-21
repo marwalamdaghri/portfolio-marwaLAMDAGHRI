@@ -4,34 +4,32 @@ import { Briefcase } from "lucide-react"
 
 const experiences = [
   {
-    title: "Stage - Développement d'une Application Web SIG",
+    title: "Internship - Web GIS Application Development",
     company: "GEOFLY SARL",
-    location: "Témara, Maroc",
-    period: "Juillet - Août 2025",
+    location: "Témara, Morocco",
+    period: "July - August 2025",
     description:
-      "Conception et développement d'une application web SIG pour la gestion et le suivi des marchés publics. Mise en œuvre d'une architecture web complète basée sur React.js (frontend) et Node.js (backend). Intégration d'une visualisation cartographique (2D et 3D) interactive des projets à l'aide d'API SIG. Rédaction du cahier des charges et proposition de perspectives d'évolution de la solution.",
+      "Design and development of a web GIS application for public market management and monitoring. Implementation of a complete web architecture based on React.js (frontend) and Node.js (backend). Integration of interactive 2D and 3D cartographic visualization of projects using GIS APIs. Drafting of specifications and proposal of solution evolution perspectives.",
     technologies: [
-  "Next.js",
-  "React.js",
-  "Tailwind CSS",
-  "Node.js",
-  "Express.js",
-  "Leaflet",
-  "Mapbox GL JS",
-  "API SIG",
-  "Cartographie 2D/3D"
-]
-
-
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Leaflet",
+      "Mapbox GL JS",
+      "GIS API",
+      "2D/3D Cartography"
+    ]
   },
   {
-    title: "Stage d'Initiation - Topographie",
+    title: "Initiation Internship - Topography",
     company: "TOPO-MOD",
-    location: "Al Hoceima, Maroc",
-    period: "Juillet - Septembre 2024",
+    location: "Al Hoceima, Morocco",
+    period: "July - September 2024",
     description:
-      "Apprentissage du dessin topographique et de la modélisation sur AutoCAD. Participation à la mise à jour et au traitement de données topographiques. Élaboration de plans et cartes thématiques à partir des données relevées.",
-    technologies: ["AutoCAD", "Topographie", "Cartographie", "Traitement de données"],
+      "Learning topographic drawing and modeling on AutoCAD. Participation in updating and processing topographic data. Development of plans and thematic maps from collected data.",
+    technologies: ["AutoCAD", "Topography", "Cartography", "Data processing"],
   },
 ]
 
@@ -39,7 +37,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Expérience Professionnelle</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Professional Experience</h2>
 
         <div className="max-w-4xl mx-auto space-y-6">
           {experiences.map((exp, index) => (
