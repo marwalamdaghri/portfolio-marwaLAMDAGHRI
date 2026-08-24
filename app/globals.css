@@ -142,3 +142,14 @@ body::before {
     radial-gradient(circle at 80% 80%, oklch(0.6 0.12 200) 0%, transparent 50%);
   pointer-events: none;
 }
+
+/* Leaflet popup theming */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--card);
+  color: var(--card-foreground);
+}
+
+.leaflet-container {
+  font-family: inherit;
+}

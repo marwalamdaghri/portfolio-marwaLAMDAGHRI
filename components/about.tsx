@@ -1,63 +1,85 @@
-import { Card } from "@/components/ui/card"
-import { Briefcase, Calendar, Languages } from "lucide-react"
+"use client"
 
-const stats = [
-  {
-    icon: Briefcase,
-    value: "12+",
-    label: "Academic Projects",
-  },
-  {
-    icon: Calendar,
-    value: "2",
-    label: "Professional Internships",
-  },
-  {
-    icon: Languages,
-    value: "4",
-    label: "Languages Spoken",
-  },
-]
+import { useEffect, useRef, useState } from "react"
+import { motion, useInView, animate } from "framer-motion"
+import { Card } from "@/components/ui/card"
+import { useLanguage } from "@/components/language-provider"
+
+function Counter({ to, suffix }: { to: number; suffix: string }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const inView = useInView(ref, { once: true, margin: "-40px" })
+  const [value, setValue] = useState(0)
+
+  useEffect(() => {
+    if (!inView) return
+    const controls = animate(0, to, {
+      duration: 1.6,
+      ease: "easeOut",
+      onUpdate: (v) => setValue(Math.round(v)),
+    })
+    return () => controls.stop()
+  }, [inView, to])
+
+  return (
+    <span ref={ref}>
+      {value}
+      {suffix}
+    </span>
+  )
+}
 
 export function About() {
+  const { t } = useLanguage()
+
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">About Me</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl sm:text-4xl font-bold mb-12 text-center"
+        >
+          {t.about.title}
+        </motion.h2>
 
-        <div className="max-w-4xl mx-auto">
-          {/* Stats Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-            {stats.map((stat, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <stat.icon className="h-6 w-6 text-primary" />
+        <div className="max-w-5xl mx-auto">
+          {/* Statistiques */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+            {t.about.stats.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all h-full">
+                  <div className="text-3xl sm:text-4xl font-extrabold text-primary mb-2">
+                    <Counter to={stat.value} suffix={stat.suffix} />
                   </div>
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </Card>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-snug">{stat.label}</div>
+                </Card>
+              </motion.div>
             ))}
           </div>
 
           {/* Bio */}
-          <Card className="p-8">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-              Final-year geoinformation engineering student at the Faculty of Sciences and Techniques of Tangier (FSTT).
-              Passionate about geomatics and spatial technologies, I am currently seeking an end-of-studies internship
-              to apply my skills in spatial analysis, GIS, and geographic application development.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-              My academic journey has enabled me to build solid expertise in web development, geographic information
-              systems, and database management. I have worked on a wide range of projects—from topographic work to GIS
-              web application development for public market management.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              I am fluent in several languages (French, English, Arabic, Tamazight) and hold a category B driving
-              license, allowing me to be mobile and adaptable in my professional missions.
-            </p>
-          </Card>
+          <motion.div
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <Card className="p-8 space-y-4">
+              {t.about.paragraphs.map((paragraph, index) => (
+                <p key={index} className="text-lg leading-relaxed text-muted-foreground">
+                  {paragraph}
+                </p>
+              ))}
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>
