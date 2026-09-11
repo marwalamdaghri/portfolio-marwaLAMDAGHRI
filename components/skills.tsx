@@ -8,8 +8,7 @@ import {
   Satellite,
   Map,
   Database,
-  ShieldCheck,
-  BrainCircuit,
+  Radar,
   Wrench,
 } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
@@ -19,8 +18,7 @@ const icons: Record<string, typeof Code2> = {
   satellite: Satellite,
   map: Map,
   database: Database,
-  shield: ShieldCheck,
-  brain: BrainCircuit,
+  radar: Radar,
   tools: Wrench,
 }
 
@@ -60,7 +58,7 @@ export function Skills() {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: (index % 2) * 0.1 }}
               >
-                <Card className={`p-6 h-full hover:shadow-lg hover:-translate-y-1 transition-all ${category.icon === "tools" ? "md:col-span-2" : ""}`}>
+                <Card className="p-6 h-full hover:shadow-lg hover:-translate-y-1 transition-all">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <Icon className="h-5 w-5 text-primary" />

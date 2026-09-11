@@ -17,9 +17,9 @@ const fr = {
     nameFirst: "Marwa",
     nameLast: "Lamdaghri",
     title: "Ingénieure d'État en Géoinformation",
-    roles: ["Développeuse Full Stack", "Développeuse Web SIG", "Passionnée de géospatial"],
+    roles: ["SIG · Télédétection · Analyse spatiale", "Interopérabilité CAO/SIG", "Cartographie territoriale"],
     tagline:
-      "Je conçois des applications web modernes et performantes, en alliant développement full stack et expertise SIG.",
+      "Je conçois des solutions d'analyse et de gestion de données géospatiales, en mobilisant si nécessaire des compétences en développement pour créer des outils SIG sur mesure.",
     available: "Diplômée 2026 — Disponible pour opportunités",
     downloadCv: "Télécharger CV",
     contactMe: "Me contacter",
@@ -28,26 +28,21 @@ const fr = {
   about: {
     title: "À propos de moi",
     stats: [
-      { value: 12, suffix: "", label: "Modules développés (PFE MarchicaMed)" },
+      { value: 15, suffix: "+", label: "Projets SIG réalisés" },
       { value: 3, suffix: "", label: "Stages professionnels" },
-      { value: 15, suffix: "+", label: "Projets académiques" },
+      { value: 12, suffix: "", label: "Modules développés (PFE MarchicaMed)" },
       { value: 4, suffix: "", label: "Langues parlées" },
     ],
     paragraphs: [
-      "Diplômée d'État ingénieure en Géoinformation de la Faculté des Sciences et Techniques de Tanger (Université Abdelmalek Essaâdi, promotion 2026), je combine une expertise SIG approfondie avec le développement full stack pour concevoir des applications cartographiques modernes et performantes.",
-      "Mon projet de fin d'études chez MarchicaMed m'a permis de mener de bout en bout la conception et le développement d'une plateforme WebSIG d'entreprise de 12 modules : interopérabilité CAO/SIG (conversion DWG/DXF vers GeoJSON), contrôle budgétaire selon la nomenclature TGR, assistant conversationnel IA et authentification LDAP.",
+      "Diplômée d'État ingénieure en Géoinformation de la Faculté des Sciences et Techniques de Tanger (Université Abdelmalek Essaâdi, promotion 2026), je suis spécialisée en analyse spatiale, cartographie et télédétection, avec des compétences complémentaires en développement pour concevoir des outils SIG adaptés aux besoins terrain.",
+      "Mon projet de fin d'études chez MarchicaMed a porté sur la conception d'une plateforme de gestion territoriale intégrant un pipeline d'interopérabilité CAO/SIG (conversion DWG/DXF vers GeoJSON, reprojection de systèmes de coordonnées) et un module de cartographie interactive, appuyés par une architecture applicative complète.",
       "Je parle couramment plusieurs langues (français, anglais, arabe, tamazight) et je suis titulaire du permis B, ce qui me rend mobile et adaptable dans mes missions professionnelles.",
     ],
   },
   skills: {
     title: "Compétences",
-    subtitle: "Un profil hybride SIG / développement web full stack",
+    subtitle: "Analyse spatiale, cartographie et télédétection, avec des compétences en développement d'outils géospatiaux",
     categories: [
-      {
-        icon: "code",
-        name: "Développement",
-        skills: ["Java 17", "Spring Boot 3", "Angular", "TypeScript", "JavaScript", "Python", "React", "Next.js", "Node.js", "Express", "Django", "HTML/CSS"],
-      },
       {
         icon: "satellite",
         name: "SIG & Télédétection",
@@ -59,19 +54,19 @@ const fr = {
         skills: ["Leaflet", "OpenLayers", "Mapbox", "Leaflet-Geoman", "proj4j"],
       },
       {
+        icon: "radar",
+        name: "Analyse spatiale",
+        skills: ["ArcGIS Model Builder", "ArcScene", "Analyse multicritère", "Interpolation spatiale", "Géoréférencement", "Analyse de réseau"],
+      },
+      {
         icon: "database",
-        name: "Bases de données",
+        name: "Bases de données & serveurs spatiaux",
         skills: ["PostgreSQL / PostGIS", "SQLite", "MySQL", "GeoServer", "Liquibase"],
       },
       {
-        icon: "shield",
-        name: "Sécurité",
-        skills: ["JWT", "LDAP / Active Directory", "RBAC", "CSRF / XSS"],
-      },
-      {
-        icon: "brain",
-        name: "Intelligence artificielle",
-        skills: ["Groq API", "LLM (Llama 3.3 70B)"],
+        icon: "code",
+        name: "Développement",
+        skills: ["Java 17", "Spring Boot 3", "Angular", "TypeScript", "JavaScript", "Python", "React", "Next.js", "Node.js", "Express", "Django", "HTML/CSS"],
       },
       {
         icon: "tools",
@@ -118,7 +113,7 @@ const fr = {
         id: "pfe",
         featured: true,
         badge: "Stage PFE · Projet vedette",
-        title: "Ingénieure en développement logiciel — Full Stack",
+        title: "Ingénieure Géomatique — Interopérabilité CAO/SIG et cartographie territoriale",
         company: "MarchicaMed — Société de Développement Stratégique de la Lagune de Marchica",
         location: "Nador, Maroc · Direction des Systèmes d'Information",
         period: "Fév. – Juin 2026",
@@ -127,12 +122,12 @@ const fr = {
         summary:
           "Conception et développement complet d'une application web sur mesure couvrant 12 modules fonctionnels : suivi budgétaire selon la nomenclature TGR marocaine, pipeline d'interopérabilité CAO/SIG (DWG/DXF → GeoJSON), assistant conversationnel IA et authentification d'entreprise LDAP.",
         details: [
-          "Gestion des projets, phases, tickets et documents",
-          "Contrôle budgétaire à 5 niveaux (nomenclature TGR marocaine) avec versionnage et snapshots immuables",
-          "Circuit de validation des demandes d'exécution budgétaire",
           "Pipeline d'interopérabilité CAO/SIG : conversion automatique DWG/DXF → GeoJSON avec détection automatique du système de coordonnées (Lambert Maroc EPSG:26191, UTM 30N, WGS84) et reprojection via proj4j",
           "Visualisation interactive des plans architecturaux sur carte Leaflet directement dans le navigateur, sans licence AutoCAD",
           "Carte multi-projets géolocalisée avec délimitation de zones géographiques",
+          "Gestion des projets, phases, tickets et documents",
+          "Contrôle budgétaire à 5 niveaux (nomenclature TGR marocaine) avec versionnage et snapshots immuables",
+          "Circuit de validation des demandes d'exécution budgétaire",
           "Assistant conversationnel en langage naturel (Groq API + Llama 3.3 70B) avec contrôle d'accès par rôle",
           "Authentification LDAP/Active Directory + JWT + RBAC",
           "Microservice de gestion des fichiers mutualisé",
@@ -233,6 +228,127 @@ const fr = {
     },
     items: [
       {
+        title: "Plugin QGIS — Validation des dérogations d'urbanisme",
+        category: "gis",
+        description:
+          "Plugin QGIS développé en Python pour l'aide à la décision sur les dérogations d'urbanisme : analyse automatique des contraintes spatiales et réglementaires — vérification de la surface minimale (1 ha), buffer de 1 km, évitement des terrains protégés et limite de 5 dérogations par zone.",
+        technologies: ["Python", "PyQGIS", "Qt Designer", "Analyse spatiale", "SIG"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/qgis-plugin/interface-main.jpg", alt: "Interface QGIS principale avec les couches spatiales" },
+          { src: "/projects/qgis-plugin/dialog-empty.jpg", alt: "Formulaire de saisie du plugin" },
+          { src: "/projects/qgis-plugin/dialog-analysis.jpg", alt: "Analyse en cours avec la zone de recherche" },
+          { src: "/projects/qgis-plugin/results-success.jpg", alt: "Résultats — projet conforme sans conflit" },
+          { src: "/projects/qgis-plugin/results-conflict.jpg", alt: "Résultats — conflits détectés nécessitant révision" },
+          { src: "/projects/qgis-plugin/map-intersections.jpg", alt: "Carte des intersections avec les zones protégées" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Google Earth Engine — Impact de l'urbanisation sur les espaces verts",
+        category: "remote",
+        description:
+          "Analyse de l'urbanisation de Tanger entre 2016 et 2023 et son impact sur la disparition des espaces verts : traitement d'images satellitaires sous Google Earth Engine, détection des changements d'occupation du sol (NDVI/NDBI) et génération d'un rapport d'analyse.",
+        technologies: ["Google Earth Engine", "Télédétection", "JavaScript", "Analyse temporelle"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/GEE/ndvi1.png", alt: "Évolution NDVI (végétation) – Année 2016" },
+          { src: "/projects/GEE/ndvi2.png", alt: "Évolution NDVI (végétation) – Année 2023" },
+          { src: "/projects/GEE/diffNdbi.png", alt: "Carte des différences NDVI (2016–2023)" },
+          { src: "/projects/GEE/ndbi1.png", alt: "Évolution NDBI (urbanisation) – Année 2016" },
+          { src: "/projects/GEE/ndbi2.png", alt: "Évolution NDBI (urbanisation) – Année 2023" },
+          { src: "/projects/GEE/betonise.png", alt: "Carte des zones urbanisées (2016–2023)" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Localisation optimale d'une station d'épuration (Ouazzane)",
+        category: "gis",
+        description:
+          "Analyse spatiale multicritère pour déterminer l'emplacement optimal d'une station d'épuration des eaux usées à Ouazzane : automatisation via ArcMap Model Builder, visualisation 3D sous ArcScene, critères d'altitude, proximité des cours d'eau et distance aux zones résidentielles.",
+        technologies: ["ArcMap", "Model Builder", "ArcScene", "Analyse multicritère", "SIG"],
+        github: "",
+        demo: "",
+        images: [],
+        videos: [
+          {
+            src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20video%20-%20Made%20with%20Clipchamp-zgVDJMCzPvvmXu6PfhPD7aem6YnId9.mp4",
+            alt: "Démonstration des résultats",
+          },
+        ],
+      },
+      {
+        title: "Analyse multicritère — Localisation d'une école (ArcMap)",
+        category: "gis",
+        description:
+          "Recherche du site optimal pour une nouvelle école à Stowe (Vermont) : analyse multicritère pondérée prenant en compte la distance aux écoles existantes, la pente du terrain, la proximité des sites récréatifs et l'aptitude des sols, à partir de données raster (MNT, occupation du sol) et vectorielles (routes, écoles).",
+        technologies: ["ArcMap", "Analyse multicritère", "Raster", "Pondération", "SIG"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/newSchool/model1.jpg", alt: "Model Builder pour trouver le site optimal" },
+          { src: "/projects/newSchool/site.jpg", alt: "Carte finale du site optimal pour la nouvelle école" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Étude de l'érosion côtière — Baie de Tanger",
+        category: "gis",
+        description:
+          "Étude de l'instabilité du littoral de la baie de Tanger menaçant les infrastructures urbaines : géoréférencement de photos aériennes multi-dates (1963 et 1996) et de cartes topographiques, identification des zones prioritaires de protection entre le port de Tanger-ville et la zone Gandouri.",
+        technologies: ["ArcMap", "Géoréférencement", "Photos aériennes", "Analyse temporelle", "Cartographie"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/cote/cote.jpg", alt: "Carte du littoral en 1963 et 1996 et zones à risque à Tanger" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Analyse spatiale de la distribution de la criminalité",
+        category: "gis",
+        description:
+          "Analyse statistique de la distribution spatiale de 24 points de criminalité sur une zone d'étude de 64 km² : méthode des quadrats et méthode du plus proche voisin pour identifier les schémas et concentrations d'activité.",
+        technologies: ["Analyse spatiale", "Statistiques", "SIG", "Méthodes quantitatives"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/mas.png", alt: "Nuage de points de coordonnées (X,Y)" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Levé topographique — Parking FST Tanger",
+        category: "gis",
+        description:
+          "Levé topographique complet du parking de la Faculté des Sciences et Techniques de Tanger : collecte des données terrain, mesures de précision, traitement des données et élaboration de plans topographiques détaillés.",
+        technologies: ["Topographie", "Station totale", "GPS", "AutoCAD", "Levé terrain"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/leve.jpg", alt: "Levé du parking de la Faculté des Sciences et Techniques de Tanger" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Dynamiques régionales de Marrakech-Safi",
+        category: "gis",
+        description:
+          "Projet d'équipe analysant les dynamiques socio-économiques, les impacts environnementaux et les aménagements infrastructuriers de la région Marrakech-Safi : interpolation spatiale, analyse de réseau et traitement de données de télédétection.",
+        technologies: ["QGIS", "ArcGIS", "Python", "Analyse spatiale", "Télédétection"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/marrakech/carte.jpg", alt: "Production d'eau et nombre d'abonnés en 2020 dans la région Marrakech-Safi" },
+          { src: "/projects/marrakech/carte2.jpg", alt: "Énergie consommée et énergies renouvelables en 2020" },
+          { src: "/projects/marrakech/carte3.jpg", alt: "Réseau routier et constructions routières en 2021" },
+          { src: "/projects/marrakech/carte4.jpg", alt: "Capacité normale des barrages et leur taux de remplissage en 2021" },
+        ],
+        videos: [],
+      },
+      {
         title: "Solution WebSIG de gestion et suivi des marchés publics — GeoFly",
         category: "websig",
         description:
@@ -271,98 +387,6 @@ const fr = {
         ],
       },
       {
-        title: "Plugin QGIS — Validation des dérogations d'urbanisme",
-        category: "gis",
-        description:
-          "Plugin QGIS développé en Python pour l'aide à la décision sur les dérogations d'urbanisme : analyse automatique des contraintes spatiales et réglementaires — vérification de la surface minimale (1 ha), buffer de 1 km, évitement des terrains protégés et limite de 5 dérogations par zone.",
-        technologies: ["Python", "PyQGIS", "Qt Designer", "Analyse spatiale", "SIG"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/qgis-plugin/interface-main.jpg", alt: "Interface QGIS principale avec les couches spatiales" },
-          { src: "/projects/qgis-plugin/dialog-empty.jpg", alt: "Formulaire de saisie du plugin" },
-          { src: "/projects/qgis-plugin/dialog-analysis.jpg", alt: "Analyse en cours avec la zone de recherche" },
-          { src: "/projects/qgis-plugin/results-success.jpg", alt: "Résultats — projet conforme sans conflit" },
-          { src: "/projects/qgis-plugin/results-conflict.jpg", alt: "Résultats — conflits détectés nécessitant révision" },
-          { src: "/projects/qgis-plugin/map-intersections.jpg", alt: "Carte des intersections avec les zones protégées" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Google Earth Engine — Impact de l'urbanisation sur les espaces verts",
-        category: "remote",
-        description:
-          "Analyse de l'urbanisation de Tanger entre 2016 et 2023 et son impact sur la disparition des espaces verts : traitement d'images satellitaires sous Google Earth Engine, détection des changements d'occupation du sol (NDVI/NDBI) et génération d'un rapport d'analyse.",
-        technologies: ["Google Earth Engine", "Télédétection", "JavaScript", "Analyse temporelle"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/GEE/ndvi1.png", alt: "Évolution NDVI (végétation) – Année 2016" },
-          { src: "/projects/GEE/ndvi2.png", alt: "Évolution NDVI (végétation) – Année 2023" },
-          { src: "/projects/GEE/diffNdbi.png", alt: "Carte des différences NDVI (2016–2023)" },
-          { src: "/projects/GEE/ndbi1.png", alt: "Évolution NDBI (urbanisation) – Année 2016" },
-          { src: "/projects/GEE/ndbi2.png", alt: "Évolution NDBI (urbanisation) – Année 2023" },
-          { src: "/projects/GEE/betonise.png", alt: "Carte des zones urbanisées (2016–2023)" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Dynamiques régionales de Marrakech-Safi",
-        category: "gis",
-        description:
-          "Projet d'équipe analysant les dynamiques socio-économiques, les impacts environnementaux et les aménagements infrastructuriers de la région Marrakech-Safi : interpolation spatiale, analyse de réseau et traitement de données de télédétection.",
-        technologies: ["QGIS", "ArcGIS", "Python", "Analyse spatiale", "Télédétection"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/marrakech/carte.jpg", alt: "Production d'eau et nombre d'abonnés en 2020 dans la région Marrakech-Safi" },
-          { src: "/projects/marrakech/carte2.jpg", alt: "Énergie consommée et énergies renouvelables en 2020" },
-          { src: "/projects/marrakech/carte3.jpg", alt: "Réseau routier et constructions routières en 2021" },
-          { src: "/projects/marrakech/carte4.jpg", alt: "Capacité normale des barrages et leur taux de remplissage en 2021" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Application VBA — Calculs topographiques automatisés",
-        category: "gis",
-        description:
-          "Application Excel utilisant VBA pour automatiser les calculs topographiques : nivellement, transformations de coordonnées, calculs de distances et d'azimuts. Interface intuitive de saisie terrain et génération instantanée de résultats précis.",
-        technologies: ["VBA", "Excel", "Topographie", "Systèmes de coordonnées"],
-        github: "",
-        demo: "",
-        images: [],
-        videos: [],
-      },
-      {
-        title: "Analyse spatiale de la distribution de la criminalité",
-        category: "gis",
-        description:
-          "Analyse statistique de la distribution spatiale de 24 points de criminalité sur une zone d'étude de 64 km² : méthode des quadrats et méthode du plus proche voisin pour identifier les schémas et concentrations d'activité.",
-        technologies: ["Analyse spatiale", "Statistiques", "SIG", "Méthodes quantitatives"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/mas.png", alt: "Nuage de points de coordonnées (X,Y)" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Localisation optimale d'une station d'épuration (Ouazzane)",
-        category: "gis",
-        description:
-          "Analyse spatiale multicritère pour déterminer l'emplacement optimal d'une station d'épuration des eaux usées à Ouazzane : automatisation via ArcMap Model Builder, visualisation 3D sous ArcScene, critères d'altitude, proximité des cours d'eau et distance aux zones résidentielles.",
-        technologies: ["ArcMap", "Model Builder", "ArcScene", "Analyse multicritère", "SIG"],
-        github: "",
-        demo: "",
-        images: [],
-        videos: [
-          {
-            src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20video%20-%20Made%20with%20Clipchamp-zgVDJMCzPvvmXu6PfhPD7aem6YnId9.mp4",
-            alt: "Démonstration des résultats",
-          },
-        ],
-      },
-      {
         title: "Site e-commerce",
         category: "fullstack",
         description:
@@ -385,43 +409,14 @@ const fr = {
         videos: [],
       },
       {
-        title: "Analyse multicritère — Localisation d'une école (ArcMap)",
+        title: "Application VBA — Calculs topographiques automatisés",
         category: "gis",
         description:
-          "Recherche du site optimal pour une nouvelle école à Stowe (Vermont) : analyse multicritère pondérée prenant en compte la distance aux écoles existantes, la pente du terrain, la proximité des sites récréatifs et l'aptitude des sols, à partir de données raster (MNT, occupation du sol) et vectorielles (routes, écoles).",
-        technologies: ["ArcMap", "Analyse multicritère", "Raster", "Pondération", "SIG"],
+          "Application Excel utilisant VBA pour automatiser les calculs topographiques : nivellement, transformations de coordonnées, calculs de distances et d'azimuts. Interface intuitive de saisie terrain et génération instantanée de résultats précis.",
+        technologies: ["VBA", "Excel", "Topographie", "Systèmes de coordonnées"],
         github: "",
         demo: "",
-        images: [
-          { src: "/projects/newSchool/model1.jpg", alt: "Model Builder pour trouver le site optimal" },
-          { src: "/projects/newSchool/site.jpg", alt: "Carte finale du site optimal pour la nouvelle école" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Étude de l'érosion côtière — Baie de Tanger",
-        category: "gis",
-        description:
-          "Étude de l'instabilité du littoral de la baie de Tanger menaçant les infrastructures urbaines : géoréférencement de photos aériennes multi-dates (1963 et 1996) et de cartes topographiques, identification des zones prioritaires de protection entre le port de Tanger-ville et la zone Gandouri.",
-        technologies: ["ArcMap", "Géoréférencement", "Photos aériennes", "Analyse temporelle", "Cartographie"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/cote/cote.jpg", alt: "Carte du littoral en 1963 et 1996 et zones à risque à Tanger" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Levé topographique — Parking FST Tanger",
-        category: "gis",
-        description:
-          "Levé topographique complet du parking de la Faculté des Sciences et Techniques de Tanger : collecte des données terrain, mesures de précision, traitement des données et élaboration de plans topographiques détaillés.",
-        technologies: ["Topographie", "Station totale", "GPS", "AutoCAD", "Levé terrain"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/leve.jpg", alt: "Levé du parking de la Faculté des Sciences et Techniques de Tanger" },
-        ],
+        images: [],
         videos: [],
       },
     ],
@@ -491,7 +486,7 @@ const fr = {
   contact: {
     title: "Contact",
     intro:
-      "Diplômée 2026 en Géoinformation, je recherche des opportunités en développement web SIG et full stack. N'hésitez pas à me contacter pour discuter de collaborations ou pour toute question !",
+      "Diplômée 2026 en Géoinformation, je recherche des opportunités en SIG, analyse spatiale et gestion de données géospatiales. N'hésitez pas à me contacter pour discuter de collaborations ou pour toute question !",
     emailLabel: "Email",
     phoneLabel: "Téléphone",
     locationLabel: "Localisation",
@@ -523,9 +518,9 @@ const en: Content = {
     nameFirst: "Marwa",
     nameLast: "Lamdaghri",
     title: "State Engineer in Geoinformation",
-    roles: ["Full Stack Developer", "Web GIS Developer", "Geospatial enthusiast"],
+    roles: ["GIS · Remote Sensing · Spatial Analysis", "CAD/GIS interoperability", "Territorial cartography"],
     tagline:
-      "I design modern, high-performance web applications, combining full stack development with GIS expertise.",
+      "I design geospatial data analysis and management solutions, leveraging development skills where needed to build tailor-made GIS tools.",
     available: "2026 Graduate — Available for opportunities",
     downloadCv: "Download CV",
     contactMe: "Contact me",
@@ -534,36 +529,34 @@ const en: Content = {
   about: {
     title: "About Me",
     stats: [
-      { value: 12, suffix: "", label: "Modules developed (MarchicaMed PFE)" },
+      { value: 15, suffix: "+", label: "GIS projects completed" },
       { value: 3, suffix: "", label: "Professional internships" },
-      { value: 15, suffix: "+", label: "Academic projects" },
+      { value: 12, suffix: "", label: "Modules developed (MarchicaMed PFE)" },
       { value: 4, suffix: "", label: "Languages spoken" },
     ],
     paragraphs: [
-      "I am a State Engineer in Geoinformation, graduated in 2026 from the Faculty of Sciences and Techniques of Tangier (Abdelmalek Essaâdi University). I combine deep GIS expertise with full stack development to build modern, high-performance mapping applications.",
-      "My final-year project at MarchicaMed gave me end-to-end ownership of a 12-module enterprise WebSIG platform: CAD/GIS interoperability (DWG/DXF to GeoJSON conversion), budget control following the Moroccan TGR nomenclature, an AI conversational assistant and LDAP enterprise authentication.",
+      "I am a State Engineer in Geoinformation, graduated in 2026 from the Faculty of Sciences and Techniques of Tangier (Abdelmalek Essaâdi University). I specialize in spatial analysis, cartography and remote sensing, with complementary development skills to design GIS tools adapted to field needs.",
+      "My final-year project at MarchicaMed focused on the design of a territorial management platform integrating a CAD/GIS interoperability pipeline (DWG/DXF to GeoJSON conversion, coordinate system reprojection) and an interactive cartography module, backed by a complete application architecture.",
       "I am fluent in several languages (French, English, Arabic, Tamazight) and hold a category B driving license, making me mobile and adaptable in my professional assignments.",
     ],
   },
   skills: {
     title: "Skills",
-    subtitle: "A hybrid GIS / full stack web development profile",
+    subtitle: "Spatial analysis, cartography and remote sensing, with skills in geospatial tool development",
     categories: fr.skills.categories.map((c) => ({
       ...c,
       name:
-        c.icon === "code"
-          ? "Development"
-          : c.icon === "satellite"
-            ? "GIS & Remote Sensing"
-            : c.icon === "map"
-              ? "Web Cartography"
+        c.icon === "satellite"
+          ? "GIS & Remote Sensing"
+          : c.icon === "map"
+            ? "Web Cartography"
+            : c.icon === "radar"
+              ? "Spatial Analysis"
               : c.icon === "database"
-                ? "Databases"
-                : c.icon === "shield"
-                  ? "Security"
-                  : c.icon === "brain"
-                    ? "Artificial Intelligence"
-                    : "Tools & Methods",
+                ? "Spatial Databases & Servers"
+                : c.icon === "code"
+                  ? "Development"
+                  : "Tools & Methods",
     })),
   },
   education: {
@@ -604,7 +597,7 @@ const en: Content = {
         id: "pfe",
         featured: true,
         badge: "Final Year Project Internship · Featured",
-        title: "Software Development Engineer — Full Stack",
+        title: "Geomatics Engineer — CAD/GIS Interoperability and Territorial Cartography",
         company: "MarchicaMed — Strategic Development Society of the Marchica Lagoon",
         location: "Nador, Morocco · Information Systems Department",
         period: "Feb – Jun 2026",
@@ -613,12 +606,12 @@ const en: Content = {
         summary:
           "Complete design and development of a custom web application covering 12 functional modules: budget monitoring following the Moroccan TGR nomenclature, a CAD/GIS interoperability pipeline (DWG/DXF → GeoJSON), an AI conversational assistant and enterprise LDAP authentication.",
         details: [
-          "Management of projects, phases, tickets and documents",
-          "5-level budget control (Moroccan TGR nomenclature) with versioning and immutable snapshots",
-          "Validation workflow for budget execution requests",
           "CAD/GIS interoperability pipeline: automatic DWG/DXF → GeoJSON conversion with automatic coordinate system detection (Morocco Lambert EPSG:26191, UTM 30N, WGS84) and reprojection via proj4j",
           "Interactive visualization of architectural plans on a Leaflet map directly in the browser, without an AutoCAD license",
           "Multi-project geolocated map with geographic zone delineation",
+          "Management of projects, phases, tickets and documents",
+          "5-level budget control (Moroccan TGR nomenclature) with versioning and immutable snapshots",
+          "Validation workflow for budget execution requests",
           "Natural-language conversational assistant (Groq API + Llama 3.3 70B) with role-based access control",
           "LDAP/Active Directory authentication + JWT + RBAC",
           "Shared file management microservice",
@@ -719,6 +712,127 @@ const en: Content = {
     },
     items: [
       {
+        title: "QGIS Plugin — Urban Planning Exemption Validation",
+        category: "gis",
+        description:
+          "QGIS plugin developed in Python for decision support on urban planning exemptions: automatic analysis of spatial and regulatory constraints — minimum area check (1 ha), 1 km buffer, avoidance of protected lands and a limit of 5 exemptions per zone.",
+        technologies: ["Python", "PyQGIS", "Qt Designer", "Spatial Analysis", "GIS"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/qgis-plugin/interface-main.jpg", alt: "Main QGIS interface with all spatial layers" },
+          { src: "/projects/qgis-plugin/dialog-empty.jpg", alt: "Plugin input form" },
+          { src: "/projects/qgis-plugin/dialog-analysis.jpg", alt: "Analysis in progress with search area displayed" },
+          { src: "/projects/qgis-plugin/results-success.jpg", alt: "Results — compliant project without conflicts" },
+          { src: "/projects/qgis-plugin/results-conflict.jpg", alt: "Results — conflicts detected requiring revision" },
+          { src: "/projects/qgis-plugin/map-intersections.jpg", alt: "Map of intersections with protected areas" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Google Earth Engine — Urbanization Impact on Green Spaces",
+        category: "remote",
+        description:
+          "Analysis of Tangier's urbanization between 2016 and 2023 and its impact on green space loss: satellite image processing in Google Earth Engine, land use change detection (NDVI/NDBI) and analysis report generation.",
+        technologies: ["Google Earth Engine", "Remote Sensing", "JavaScript", "Temporal Analysis"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/GEE/ndvi1.png", alt: "NDVI vegetation evolution – Year 2016" },
+          { src: "/projects/GEE/ndvi2.png", alt: "NDVI vegetation evolution – Year 2023" },
+          { src: "/projects/GEE/diffNdbi.png", alt: "NDVI difference map (2016–2023)" },
+          { src: "/projects/GEE/ndbi1.png", alt: "NDBI urbanization evolution – Year 2016" },
+          { src: "/projects/GEE/ndbi2.png", alt: "NDBI urbanization evolution – Year 2023" },
+          { src: "/projects/GEE/betonise.png", alt: "Urbanized areas map (2016–2023)" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Optimal Location of a Wastewater Treatment Plant (Ouazzane)",
+        category: "gis",
+        description:
+          "Multi-criteria spatial analysis to determine the optimal location for a wastewater treatment plant in Ouazzane: automation with ArcMap Model Builder, 3D visualization in ArcScene, criteria including altitude, proximity to rivers and distance from residential areas.",
+        technologies: ["ArcMap", "Model Builder", "ArcScene", "Multi-criteria Analysis", "GIS"],
+        github: "",
+        demo: "",
+        images: [],
+        videos: [
+          {
+            src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20video%20-%20Made%20with%20Clipchamp-zgVDJMCzPvvmXu6PfhPD7aem6YnId9.mp4",
+            alt: "Results demonstration",
+          },
+        ],
+      },
+      {
+        title: "Multi-criteria Analysis — School Location (ArcMap)",
+        category: "gis",
+        description:
+          "Finding the optimal site for a new school in Stowe, Vermont: weighted multi-criteria analysis considering distance from existing schools, terrain slope, proximity to recreational sites and soil suitability, using raster (DEM, land use) and vector (roads, schools) data.",
+        technologies: ["ArcMap", "Multi-criteria Analysis", "Raster", "Weighting", "GIS"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/newSchool/model1.jpg", alt: "Model builder used to find the optimal site" },
+          { src: "/projects/newSchool/site.jpg", alt: "Final map of the optimal site for the new school" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Coastal Erosion Study — Tangier Bay",
+        category: "gis",
+        description:
+          "Study of coastline instability in Tangier Bay threatening urban infrastructure: georeferencing of multi-date aerial photos (1963 and 1996) and topographic maps, identification of priority protection areas between the Tangier-ville port and the Gandouri area.",
+        technologies: ["ArcMap", "Georeferencing", "Aerial photos", "Temporal analysis", "Cartography"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/cote/cote.jpg", alt: "Map showing coastline in 1963 and 1996 and risk areas in Tangier" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Spatial Analysis of Crime Distribution",
+        category: "gis",
+        description:
+          "Statistical analysis of the spatial distribution of 24 crime points in a 64 km² study area: quadrat method and nearest neighbor method to identify patterns and concentrations of criminal activity.",
+        technologies: ["Spatial Analysis", "Statistics", "GIS", "Quantitative methods"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/mas.png", alt: "Point cloud of coordinates (X,Y)" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Topographic Survey — FST Tangier Parking",
+        category: "gis",
+        description:
+          "Complete topographic survey of the parking lot of the Faculty of Sciences and Techniques of Tangier: field data collection, precise measurements, data processing and production of detailed topographic plans.",
+        technologies: ["Topography", "Total station", "GPS", "AutoCAD", "Field survey"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/leve.jpg", alt: "Survey of the Faculty of Sciences and Techniques of Tangier parking lot" },
+        ],
+        videos: [],
+      },
+      {
+        title: "Marrakech-Safi Regional Dynamics Analysis",
+        category: "gis",
+        description:
+          "Team project analyzing socio-economic dynamics, environmental impacts and infrastructure developments in the Marrakech-Safi region: spatial interpolation, network analysis and remote sensing data processing.",
+        technologies: ["QGIS", "ArcGIS", "Python", "Spatial Analysis", "Remote Sensing"],
+        github: "",
+        demo: "",
+        images: [
+          { src: "/projects/marrakech/carte.jpg", alt: "Water production and number of consumers in 2020 in the Marrakech-Safi region" },
+          { src: "/projects/marrakech/carte2.jpg", alt: "Energy consumed and renewable energies in 2020" },
+          { src: "/projects/marrakech/carte3.jpg", alt: "Road network and road construction in 2021" },
+          { src: "/projects/marrakech/carte4.jpg", alt: "Normal capacity of dams and their filling rate in 2021" },
+        ],
+        videos: [],
+      },
+      {
         title: "Web GIS Solution for Public Procurement Management — GeoFly",
         category: "websig",
         description:
@@ -757,98 +871,6 @@ const en: Content = {
         ],
       },
       {
-        title: "QGIS Plugin — Urban Planning Exemption Validation",
-        category: "gis",
-        description:
-          "QGIS plugin developed in Python for decision support on urban planning exemptions: automatic analysis of spatial and regulatory constraints — minimum area check (1 ha), 1 km buffer, avoidance of protected lands and a limit of 5 exemptions per zone.",
-        technologies: ["Python", "PyQGIS", "Qt Designer", "Spatial Analysis", "GIS"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/qgis-plugin/interface-main.jpg", alt: "Main QGIS interface with all spatial layers" },
-          { src: "/projects/qgis-plugin/dialog-empty.jpg", alt: "Plugin input form" },
-          { src: "/projects/qgis-plugin/dialog-analysis.jpg", alt: "Analysis in progress with search area displayed" },
-          { src: "/projects/qgis-plugin/results-success.jpg", alt: "Results — compliant project without conflicts" },
-          { src: "/projects/qgis-plugin/results-conflict.jpg", alt: "Results — conflicts detected requiring revision" },
-          { src: "/projects/qgis-plugin/map-intersections.jpg", alt: "Map of intersections with protected areas" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Google Earth Engine — Urbanization Impact on Green Spaces",
-        category: "remote",
-        description:
-          "Analysis of Tangier's urbanization between 2016 and 2023 and its impact on green space loss: satellite image processing in Google Earth Engine, land use change detection (NDVI/NDBI) and analysis report generation.",
-        technologies: ["Google Earth Engine", "Remote Sensing", "JavaScript", "Temporal Analysis"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/GEE/ndvi1.png", alt: "NDVI vegetation evolution – Year 2016" },
-          { src: "/projects/GEE/ndvi2.png", alt: "NDVI vegetation evolution – Year 2023" },
-          { src: "/projects/GEE/diffNdbi.png", alt: "NDVI difference map (2016–2023)" },
-          { src: "/projects/GEE/ndbi1.png", alt: "NDBI urbanization evolution – Year 2016" },
-          { src: "/projects/GEE/ndbi2.png", alt: "NDBI urbanization evolution – Year 2023" },
-          { src: "/projects/GEE/betonise.png", alt: "Urbanized areas map (2016–2023)" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Marrakech-Safi Regional Dynamics Analysis",
-        category: "gis",
-        description:
-          "Team project analyzing socio-economic dynamics, environmental impacts and infrastructure developments in the Marrakech-Safi region: spatial interpolation, network analysis and remote sensing data processing.",
-        technologies: ["QGIS", "ArcGIS", "Python", "Spatial Analysis", "Remote Sensing"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/marrakech/carte.jpg", alt: "Water production and number of consumers in 2020 in the Marrakech-Safi region" },
-          { src: "/projects/marrakech/carte2.jpg", alt: "Energy consumed and renewable energies in 2020" },
-          { src: "/projects/marrakech/carte3.jpg", alt: "Road network and road construction in 2021" },
-          { src: "/projects/marrakech/carte4.jpg", alt: "Normal capacity of dams and their filling rate in 2021" },
-        ],
-        videos: [],
-      },
-      {
-        title: "VBA Application — Automated Topographic Calculations",
-        category: "gis",
-        description:
-          "Excel application using VBA to automate topographic calculations: leveling, coordinate transformations, distance and azimuth calculations. Intuitive field data entry interface with instant generation of precise results.",
-        technologies: ["VBA", "Excel", "Topography", "Coordinate systems"],
-        github: "",
-        demo: "",
-        images: [],
-        videos: [],
-      },
-      {
-        title: "Spatial Analysis of Crime Distribution",
-        category: "gis",
-        description:
-          "Statistical analysis of the spatial distribution of 24 crime points in a 64 km² study area: quadrat method and nearest neighbor method to identify patterns and concentrations of criminal activity.",
-        technologies: ["Spatial Analysis", "Statistics", "GIS", "Quantitative methods"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/mas.png", alt: "Point cloud of coordinates (X,Y)" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Optimal Location of a Wastewater Treatment Plant (Ouazzane)",
-        category: "gis",
-        description:
-          "Multi-criteria spatial analysis to determine the optimal location for a wastewater treatment plant in Ouazzane: automation with ArcMap Model Builder, 3D visualization in ArcScene, criteria including altitude, proximity to rivers and distance from residential areas.",
-        technologies: ["ArcMap", "Model Builder", "ArcScene", "Multi-criteria Analysis", "GIS"],
-        github: "",
-        demo: "",
-        images: [],
-        videos: [
-          {
-            src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20video%20-%20Made%20with%20Clipchamp-zgVDJMCzPvvmXu6PfhPD7aem6YnId9.mp4",
-            alt: "Results demonstration",
-          },
-        ],
-      },
-      {
         title: "E-commerce Website",
         category: "fullstack",
         description:
@@ -871,43 +893,14 @@ const en: Content = {
         videos: [],
       },
       {
-        title: "Multi-criteria Analysis — School Location (ArcMap)",
+        title: "VBA Application — Automated Topographic Calculations",
         category: "gis",
         description:
-          "Finding the optimal site for a new school in Stowe, Vermont: weighted multi-criteria analysis considering distance from existing schools, terrain slope, proximity to recreational sites and soil suitability, using raster (DEM, land use) and vector (roads, schools) data.",
-        technologies: ["ArcMap", "Multi-criteria Analysis", "Raster", "Weighting", "GIS"],
+          "Excel application using VBA to automate topographic calculations: leveling, coordinate transformations, distance and azimuth calculations. Intuitive field data entry interface with instant generation of precise results.",
+        technologies: ["VBA", "Excel", "Topography", "Coordinate systems"],
         github: "",
         demo: "",
-        images: [
-          { src: "/projects/newSchool/model1.jpg", alt: "Model builder used to find the optimal site" },
-          { src: "/projects/newSchool/site.jpg", alt: "Final map of the optimal site for the new school" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Coastal Erosion Study — Tangier Bay",
-        category: "gis",
-        description:
-          "Study of coastline instability in Tangier Bay threatening urban infrastructure: georeferencing of multi-date aerial photos (1963 and 1996) and topographic maps, identification of priority protection areas between the Tangier-ville port and the Gandouri area.",
-        technologies: ["ArcMap", "Georeferencing", "Aerial photos", "Temporal analysis", "Cartography"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/cote/cote.jpg", alt: "Map showing coastline in 1963 and 1996 and risk areas in Tangier" },
-        ],
-        videos: [],
-      },
-      {
-        title: "Topographic Survey — FST Tangier Parking",
-        category: "gis",
-        description:
-          "Complete topographic survey of the parking lot of the Faculty of Sciences and Techniques of Tangier: field data collection, precise measurements, data processing and production of detailed topographic plans.",
-        technologies: ["Topography", "Total station", "GPS", "AutoCAD", "Field survey"],
-        github: "",
-        demo: "",
-        images: [
-          { src: "/projects/leve.jpg", alt: "Survey of the Faculty of Sciences and Techniques of Tangier parking lot" },
-        ],
+        images: [],
         videos: [],
       },
     ],
@@ -977,7 +970,7 @@ const en: Content = {
   contact: {
     title: "Contact",
     intro:
-      "I graduated in 2026 in Geoinformation and I am looking for opportunities in web GIS and full stack development. Feel free to contact me to discuss collaboration opportunities or any questions!",
+      "I graduated in 2026 in Geoinformation and I am looking for opportunities in GIS, spatial analysis and geospatial data management. Feel free to contact me to discuss collaboration opportunities or any questions!",
     emailLabel: "Email",
     phoneLabel: "Phone",
     locationLabel: "Location",

@@ -83,7 +83,7 @@ function ProjectGallery({ images = [], videos = [] }: { images?: Media[]; videos
 
 export function Projects() {
   const { t } = useLanguage()
-  const [filter, setFilter] = useState("all")
+  const [filter, setFilter] = useState("gis")
 
   const filteredProjects = useMemo(
     () => (filter === "all" ? t.projects.items : t.projects.items.filter((p) => p.category === filter)),

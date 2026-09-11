@@ -10,27 +10,29 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lamdaghrimarwa.netlify.app"),
-  title: "Marwa Lamdaghri — Ingénieure Géoinformation | Développeuse Full Stack Web SIG",
+  title: "Marwa Lamdaghri — Ingénieure d'État en Géoinformation | SIG, Télédétection & Analyse Spatiale",
   description:
-    "Portfolio de Marwa Lamdaghri, ingénieure d'État en Géoinformation (FST Tanger) : développement web SIG full stack, plateforme WebSIG MarchicaMed avec interopérabilité CAO/SIG, télédétection et cartographie interactive.",
+    "Portfolio de Marwa Lamdaghri, ingénieure d'État en Géoinformation (FST Tanger) : SIG, télédétection, analyse spatiale, interopérabilité CAO/SIG, cartographie territoriale, avec des compétences complémentaires en développement d'applications géospatiales.",
   keywords: [
     "Marwa Lamdaghri",
     "Géoinformation",
-    "Web SIG",
-    "GIS developer",
-    "développeuse full stack",
-    "Leaflet",
+    "SIG",
+    "GIS",
+    "Géomatique",
+    "Télédétection",
+    "Analyse spatiale",
     "QGIS",
-    "Spring Boot",
-    "Angular",
-    "télédétection",
+    "ArcGIS",
+    "Google Earth Engine",
+    "Cartographie",
+    "Web SIG",
     "portfolio",
   ],
   authors: [{ name: "Marwa Lamdaghri" }],
   openGraph: {
-    title: "Marwa Lamdaghri — Ingénieure Géoinformation | Développeuse Full Stack Web SIG",
+    title: "Marwa Lamdaghri — Ingénieure d'État en Géoinformation | SIG, Télédétection & Analyse Spatiale",
     description:
-      "Ingénieure d'État en Géoinformation : WebSIG, interopérabilité CAO/SIG, développement full stack et télédétection. Découvrez mes projets et mon parcours.",
+      "Ingénieure d'État en Géoinformation : SIG, analyse spatiale, télédétection, interopérabilité CAO/SIG. Découvrez mes projets et mon parcours.",
     url: "https://lamdaghrimarwa.netlify.app",
     siteName: "Portfolio — Marwa Lamdaghri",
     locale: "fr_MA",
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marwa Lamdaghri — Ingénieure Géoinformation | Développeuse Full Stack Web SIG",
+    title: "Marwa Lamdaghri — Ingénieure d'État en Géoinformation | SIG, Télédétection & Analyse Spatiale",
     description:
-      "WebSIG, CAO/SIG, full stack, télédétection : découvrez mon parcours et mes projets.",
+      "SIG, analyse spatiale, télédétection, CAO/SIG : découvrez mon parcours et mes projets.",
   },
   robots: { index: true, follow: true },
 }
