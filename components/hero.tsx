@@ -20,8 +20,8 @@ export function Hero() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a")
-    link.href = "/cv-marwa-lamdaghri.pdf"
-    link.download = "CV-Marwa-Lamdaghri.pdf"
+    link.href = "/cv-marwa-lamdaghrii.pdf"
+    link.download = "CV-Marwa-Lamdaghrii.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
